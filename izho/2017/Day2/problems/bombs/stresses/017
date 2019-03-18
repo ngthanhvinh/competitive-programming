@@ -1,0 +1,1 @@
+{"id":"ba3423fe56687a7760d98707dc433f6c","index":17,"scriptPattern":"gen 100 100 22 31","inputFile":"bomb.in","outputFile":"bomb.out","memoryLimit":128,"timeLimit":1000,"totalTimeLimit":120000,"solutionNames":["bombs_aa_log2.cpp"],"description":""}

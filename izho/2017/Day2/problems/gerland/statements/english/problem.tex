@@ -1,0 +1,53 @@
+\begin{problem}{Simple game}{game.in}{game.out}{1 second}{256 megabytes}
+
+NurlashKO was well behaved during last year, for this Ded Moroz gifted him for New Year polygonal chain line with $N$ vertices. $i$-th vertex of this chain located at the point with coordinates $(i, y_i)$.
+
+Very soon a new game with this geometric figure was invented: the following operations are executed $M$ times: 
+\begin{itemize}  
+   \item Change $y$ coordinate for one of the chain vertexes.
+   \item Draw a horizontal line at the height $H$ and count its intersections with the chain. Note, that all points of horizontal line have $y$ coordinate equal to $H$.
+\end{itemize}
+
+NurlashKO likes this game and he asks your help to write a program for this game.
+
+
+\InputFile
+First line of input contains two positive integers $N, M (1 \leq N, M \leq 100\,000)$~--- the numbers of vertices and operations in the game, respectively.
+
+Next line contains $N$ positive integers separated by a single space $h_i (1 \leq h_i \leq 1\,000\,000)$~--- $h_i$ is the original height of the $i$-th vertex.
+
+Then in $M$ lines follows descriptions of the game operations in the following format:
+\begin{itemize}
+\item $1$ $pos$ $val$ $(1 \leq pos \leq N, 1 \leq val \leq 1\,000\,000)$~--- vertex number and its new new height, respectively.
+\item $2$ $H$ $(1 \leq H \leq 1\,000\,000)$~--- height of the horizontal line. It is guaranteed that this line will never intersects with the chain at the vertices.
+\end{itemize}
+
+\OutputFile
+For each query of the second type on a separate line output the number of intersections of horizontal line with the chain. Output answers to queries in the same order as they appear in the input file.
+
+
+\Scoring
+This problem consists of 3 subtasks:
+\begin{enumerate}
+\item $1 \leq N, M \leq 1\,000$. Score $22$ points.
+\item $1 \leq N, M \leq 100\,000$. Only query (second type) operations are allowed. Score $27$ points.
+\item $1 \leq N, M \leq 100\,000$. Score $51$ points.
+\end{enumerate}
+
+Each subtask will be scored only if the solution successfully passes all of the previous subtasks.
+
+\Example
+
+\begin{example}
+\exmp{3 3
+1 5 1
+2 3
+1 1 5
+2 3
+}{2
+1
+}%
+\end{example}
+
+\end{problem}
+

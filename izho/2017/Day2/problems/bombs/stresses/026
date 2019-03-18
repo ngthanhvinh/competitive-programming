@@ -1,0 +1,1 @@
+{"id":"78a9ec54217958f276b7dde005b0a35f","index":26,"scriptPattern":"gen 2500 2500 [10..20] [250..320]","inputFile":"bomb.in","outputFile":"bomb.out","memoryLimit":128,"timeLimit":1000,"totalTimeLimit":120000,"solutionNames":["bombs_elibay_wa.cpp"],"description":""}

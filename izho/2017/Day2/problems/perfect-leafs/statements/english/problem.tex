@@ -1,0 +1,65 @@
+\begin{problem}{Hard route}{road.in}{road.out}{1 second}{256 megabytes}
+
+Mansur ~--- is governor of the country ACMstan. There are $N$ cities and $N-1$ two-way roads in this country. It is known that from any city you can go to any other city moving along existing roads. More formally, the country looks like a tree, where the vertices are cities and the edges are two-way roads.
+
+Also, in this country, the cities with \textbf{exactly one} connected road called \textit{terminal}. A route is a simple path from one \textit{terminal} to another \textit{terminal}. The distance between two cities is the minimum number of roads on the way between them. The distance from city to the route is the minimum number of roads on the way from given city to any city on the route. Mansur decided to implement \textbf{exactly one} route in ACMstan, however he interested in only \textit{hard} routes. Hardness of route computed as follows: let $A$ and $B$ are \textit{terminals} of the route, and $H$ is the maximum distance from any city in the country to this route, then the \textit{hardness} of route is product of $H$ and the distance between $A$ and $B$.
+
+Mansur asked Temirulan to find maximal \textit{hardness} over all routes, in fact he is interested to know the number of such routes. Temirulan asking help from you.
+
+It's strongly recommend to read explanation below.
+
+\InputFile
+First line of input contains a positive integer $N$ ($2 \le N \le 500000$)~--- the number of cities in the country. The cities are numbered from $1$ to $N$. The following $N-1$ lines contain $2$ positive integers, separated by single space, $u_i$, $v_i$ ($1 \le u_i, v_i \le N; u_i \neq v_i$)~--- road connecting cities $u_i$ and $v_i$. It is guaranteed that the given graph is a tree.
+
+
+\OutputFile
+Output in single line two integers ~--- the maximal \textit{hardness} and the number of routes, separated by single spaces. \textbf{Note that}, route from $A$ to $B$ and route from $B$ to $A$ are \textbf{the same} routes.
+
+\Scoring
+This problem consists of three subtasks:
+\begin{enumerate}
+\item $2 \le N \le 100$. Score $19$ points.
+\item $2 \le N \le 5000$. Score $33$ points.
+\item $2 \le N \le 500000$. Score $48$ points.
+\end{enumerate}
+
+Each subtask will be scored if only if the solution successfully passes all of the previous subtasks.
+
+\Examples
+
+\begin{example}
+\exmp{7
+1 2
+1 3
+2 4
+2 5
+3 6
+3 7
+}{6 2
+}%
+\exmp{4
+1 2
+2 3
+2 4
+}{2 3
+}%
+\exmp{5
+1 2
+2 3
+3 4
+4 5
+}{0 1
+}%
+\end{example}
+
+\Note
+A simple path is a path with no repeated vertices. \textbf{Note}, that there may be simple path which is not route.
+
+First sample test:
+
+There is four \textit{terminal} cities with number 4, 5, 6 and 7. For route 4-2-1-3-6, the distance is 4 and distances from other cities to this route is [1, 1], maximum among them is 1, so the \textit{hardness} of route is equal to $4 \times 1 = 4$. For route 4-2-5, the distance is 2, maximum distance among other cities is 3 (from 6 or 7), \textit{hardness} of route equal to $3 \times 2 = 6$. \textit{Hardness} of 6-3-7 also 6, but other routes has smaller \textit{hardness}.
+
+In third sample test there is only two \textit{terminal} cities 1 and 5, so there is exactly one route 1-2-3-4-5, the distance is 4 and maximum distance among all cities to route is 0, because all cities are on this route already. \textit{Hardness} is equal to $4 \times 0 = 0$.
+
+\end{problem}
+

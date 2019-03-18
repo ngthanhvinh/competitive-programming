@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="20" short-name="gerland" url="https://polygon.codeforces.com/p/NurlashKO/gerland">
+    <names>
+        <name language="english" value="Simple game"/>
+        <name language="russian" value="Простая игра"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="russian" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="english" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement charset="UTF-8" language="russian" path="statements/.html/russian/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3200" input-file="game.in" output-file="game.out">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>18</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="A" method="manual" sample="true"/>
+                <test cmd="gen_stup 1000 1000 1" group="A" method="generated"/>
+                <test cmd="gen_stup 1000 1000 2" group="A" method="generated"/>
+                <test cmd="gen_stup 1000 1000 3" group="A" method="generated"/>
+                <test cmd="gen_stup 1000 1000 4" group="A" method="generated"/>
+                <test cmd="gen_stup 1000 1000 5" group="A" method="generated"/>
+                <test cmd="gen_max 1000 16" group="A" method="generated"/>
+                <test cmd="gen_B_sub 5 20 6" group="B" method="generated"/>
+                <test cmd="gen_B_sub 1 1000000 7" group="B" method="generated"/>
+                <test cmd="gen_B_sub 1 1000000 8" group="B" method="generated"/>
+                <test cmd="gen_B_sub 1 2 9" group="B" method="generated"/>
+                <test cmd="gen_B_sub 1 30000 10" group="B" method="generated"/>
+                <test cmd="gen_stup 100000 100000 11" group="C" method="generated"/>
+                <test cmd="gen_stup 100000 100000 12" group="C" method="generated"/>
+                <test cmd="gen_stup 100000 100000 13" group="C" method="generated"/>
+                <test cmd="gen_stup 100000 100000 14" group="C" method="generated"/>
+                <test cmd="gen_stup 100000 100000 15" group="C" method="generated"/>
+                <test cmd="gen_max 100000 17" group="C" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_B_sub.cpp" type="cpp.g++11"/>
+                <binary path="files/gen_B_sub.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_max.cpp" type="cpp.g++"/>
+                <binary path="files/gen_max.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_stup.cpp" type="cpp.g++"/>
+                <binary path="files/gen_stup.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>2</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/gerland_TL_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_TL_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/gerland_mi_ok.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_mi_ok.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/gerland_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/gerland_slow_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_slow_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/gerland_sub2_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_sub2_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/gerland_wa_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/gerland_wa_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sol_zb.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_zb.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>1</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list>
+            <stress index="1" path="stresses/001"/>
+        </list>
+    </stresses>
+    <tags>
+        <tag value="izho"/>
+        <tag value="izho 2017"/>
+        <tag value="izho2017"/>
+        <tag value="segment-tree"/>
+        <tag value="simple"/>
+    </tags>
+</problem>

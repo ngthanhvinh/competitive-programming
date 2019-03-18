@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<contest url="https://polygon.codeforces.com/c/5197">
+    <names>
+        <name language="english" value="XIII Zhautykov Olympiad on Mathematics, Physics and Informatics, *Day 2*"/>
+        <name language="russian" value="XIII Жаутыковская Олимпиада по Математике, Физике и Информатике *День 2*"/>
+    </names>
+    <statements>
+        <statement language="english" type="application/pdf" url="https://polygon.codeforces.com/c/5197/english/statements.pdf"/>
+        <statement language="russian" type="application/pdf" url="https://polygon.codeforces.com/c/5197/russian/statements.pdf"/>
+    </statements>
+    <problems>
+        <problem index="d" url="https://polygon.codeforces.com/p/NurlashKO/gerland"/>
+        <problem index="e" url="https://polygon.codeforces.com/p/gamzaza/bombs"/>
+        <problem index="f" url="https://polygon.codeforces.com/p/Temirulan/perfect-leafs"/>
+    </problems>
+</contest>

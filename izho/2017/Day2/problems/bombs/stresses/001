@@ -1,0 +1,1 @@
+{"id":"c8121c074043bd7c570cffe4a00a8778","index":1,"scriptPattern":"gen 20 20 5 6 ","inputFile":"bomb.in","outputFile":"bomb.out","memoryLimit":128,"timeLimit":1000,"totalTimeLimit":120000,"solutionNames":["wa_tima.cpp"],"description":""}

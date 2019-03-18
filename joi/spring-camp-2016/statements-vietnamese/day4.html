@@ -1,0 +1,1688 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<title>day4</title></head><body><article class="markdown-body"><h1 id="tong-quan"><a name="user-content-tong-quan" href="#tong-quan" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tổng quan</h1>
+<table>
+<thead>
+<tr>
+<th>Bài</th>
+<th>Dangerous Skating</th>
+<th>Snowy Roads</th>
+<th>Worst Reporter 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loại bài</td>
+<td>Batch task</td>
+<td>Communication task</td>
+<td>Batch task</td>
+</tr>
+<tr>
+<td>Giới hạn thời gian</td>
+<td>3 giây</td>
+<td>1 giây</td>
+<td>2 giây</td>
+</tr>
+<tr>
+<td>Giới hạn bộ nhớ</td>
+<td>256 MB</td>
+<td>256 MB</td>
+<td>256 MB</td>
+</tr>
+<tr>
+<td>Điểm</td>
+<td>100 điểm</td>
+<td>100 điểm</td>
+<td>100 điểm</td>
+</tr>
+</tbody>
+</table>
+<h1 id="dangerous-skating"><a name="user-content-dangerous-skating" href="#dangerous-skating" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>危険なスケート(Dangerous Skating)</h1>
+<p>Bé JOI rất thích trượt băng, đặc biệt là ở những sân trượt băng gần gũi với thiên nhiên.</p>
+<p>Lần này bé JOI đi đến một sân trượt băng có dạng hình chữ nhật dạng lưới ô vuông gồm $R$ hàng và $C$ cột. Các hàng được đánh số từ $1$ đến $R$ và các cột được đánh số từ $1$ đến $C$. Ô nằm ở giao của hàng $r$ và cột $c$ gọi là ô $(r, c)$. Mỗi ô hoặc là một ô mà bé JOI có thể trượt qua, hoặc là một ô mà bé JOI không thể trượt qua do có núi băng. Các ô bên ngoài cùng của sân trượt đều là núi băng nên bé JOI không thể trượt ra khỏi sân trượt. Nói cách khác, tất cả các ô $(i, 1)$, $(i, C)$ $(1 \leq i \leq R)$ và $(1, j)$, $(R, j)$ $(1 \leq j \leq C)$ đều là núi băng.</p>
+<p>Bé JOI không giỏi trượt lắm nên mỗi lần trượt, bé sẽ đạp xuống mặt băng rồi trượt thẳng một đường song song với một trong hai cạnh của sân trượt và chỉ dừng lại nếu bé sẽ va vào núi băng nếu tiếp tục đi thẳng. Một lần như vậy được tính là một đường trượt. Bé JOI không thể trượt theo hướng mà ô ngay trước mặt theo hướng đó là núi băng.</p>
+<p>Một thế rồi một ngày nọ, một điều rất kì lạ đã xảy tới. Mỗi lần bé JOI đạp xuống mặt băng để trượt đi thì ngay lập tức ô đã bị bé JOI đạp xuất hiện núi băng. Nhận thấy nguy hiểm, bé JOI muốn rời khỏi sân trượt càng sớm càng tốt.</p>
+<p>Bé JOI đang đứng ở ô $(r_1, c_1)$. Để rời khỏi sân băng, bé JOI cần dừng lại ở nơi có cửa ra là ô $(r_2, c_2)$. Hãy xác định xem bé JOI cần thực hiện tối thiểu bao nhiêu đường trượt để có thể rời khỏi sân trượt. Chú ý rằng tuỳ theo trạng thái ban đầu của sân băng, việc bé JOI không thể rời khỏi sân trượt là có thể xảy ra. Chú ý rằng, bé JOI chỉ có thể rời khỏi sân bằng nếu bé <em>dừng lại</em> tại ô có cửa ra.</p>
+<h2 id="du-lieu"><a name="user-content-du-lieu" href="#du-lieu" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h2>
+<ul>
+<li>Dòng 1: Hai số nguyên $R$ và $C$.</li>
+<li>$R$ dòng tiếp theo, mỗi dòng chứa một xâu kí tự độ dài $C$. Mỗi kí tự của xâu kí tự là <code>.</code> hoặc <code>#</code>. Kí tự thứ $c$ $(1 \leq c \leq C)$ của xâu kí tự nằm trên dòng thứ $r$ $(1 \leq r \leq R)$ trong số $R$ dòng này cho biết trạng thái ban đầu của ô $(r, c)$. Kí tự <code>.</code> mô tả một ô mà bé JOI có thể trượt qua, kí tự <code>#</code> mô tả một ô có núi băng.</li>
+<li>Dòng tiếp theo: Hai số nguyên $r_1$ và $c_1$.</li>
+<li>Dòng tiếp theo: Hai số nguyên $r_2$ và $c_2$.</li>
+</ul>
+<h2 id="ket-qua"><a name="user-content-ket-qua" href="#ket-qua" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h2>
+<p>Ghi ra số đường trượt tối thiểu mà bé JOI cần thực hiện để rời khỏi sân trượt. Nếu bé JOI không thể rời khỏi sân trượt, ghi ra <code>-1</code>.</p>
+<h2 id="gioi-han"><a name="user-content-gioi-han" href="#gioi-han" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Giới hạn</h2>
+<p>Trong tất cả các test:</p>
+<ul>
+<li>$3 \leq R \leq 1000$.</li>
+<li>$3 \leq C \leq 1000$.</li>
+<li>$1 \leq r_1 \leq R$.</li>
+<li>$1 \leq c_1 \leq C$.</li>
+<li>$1 \leq r_2 \leq R$.</li>
+<li>$1 \leq c_2 \leq C$.</li>
+<li>Tất cả các ô bên ngoài cùng của sân trượt đều có núi băng. Tức là tất cả các ô $(i, 1)$, $(i, C)$ $(1 \leq i \leq R)$ và $(1, j)$, $(R, j)$ $(1 \leq j \leq C)$ đều có núi băng.</li>
+<li>Không có núi băng ở hai ô $(r_1, c_1)$ và $(r_2, c_2)$.</li>
+</ul>
+<h2 id="subtask"><a name="user-content-subtask" href="#subtask" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask</h2>
+<h3 id="subtask-1-13-iem"><a name="user-content-subtask-1-13-iem" href="#subtask-1-13-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 1 (13 điểm)</h3>
+<p>Trong subtask này:</p>
+<ul>
+<li>$R \leq 10$.</li>
+<li>$C \leq 10$.</li>
+<li>Nếu bé JOI có thể rời khỏi sân trượt thì số đường trượt mà bé JOI cần thực hiện không vượt quá $10$.</li>
+</ul>
+<h3 id="subtask-2-65-iem"><a name="user-content-subtask-2-65-iem" href="#subtask-2-65-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 2 (65 điểm)</h3>
+<p>Trong subtask này:</p>
+<ul>
+<li>$R \leq 200$.</li>
+<li>$C \leq 200$.</li>
+</ul>
+<h3 id="subtask-3-22-iem"><a name="user-content-subtask-3-22-iem" href="#subtask-3-22-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 3 (22 điểm)</h3>
+<p>Không có ràng buộc gì thêm.</p>
+<h2 id="vi-du"><a name="user-content-vi-du" href="#vi-du" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ</h2>
+<h3 id="vi-du-1"><a name="user-content-vi-du-1" href="#vi-du-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 1</h3>
+<h4 id="du-lieu_1"><a name="user-content-du-lieu_1" href="#du-lieu_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>5 5
+#####
+#...#
+#...#
+#...#
+#####
+2 2
+3 3
+</code></pre>
+
+<h4 id="ket-qua_1"><a name="user-content-ket-qua_1" href="#ket-qua_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>4
+</code></pre>
+
+<h3 id="vi-du-2"><a name="user-content-vi-du-2" href="#vi-du-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 2</h3>
+<h4 id="du-lieu_2"><a name="user-content-du-lieu_2" href="#du-lieu_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>8 6
+######
+#..#.#
+##...#
+#....#
+#.#..#
+#....#
+##...#
+######
+4 3
+6 4
+</code></pre>
+
+<h4 id="ket-qua_2"><a name="user-content-ket-qua_2" href="#ket-qua_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>5
+</code></pre>
+
+<h3 id="vi-du-3"><a name="user-content-vi-du-3" href="#vi-du-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 3</h3>
+<h4 id="du-lieu_3"><a name="user-content-du-lieu_3" href="#du-lieu_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>5 5
+#####
+#.#.#
+#.#.#
+#.#.#
+#####
+2 2
+4 4
+</code></pre>
+
+<h4 id="ket-qua_3"><a name="user-content-ket-qua_3" href="#ket-qua_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>-1
+</code></pre>
+
+<h3 id="vi-du-4"><a name="user-content-vi-du-4" href="#vi-du-4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 4</h3>
+<h4 id="du-lieu_4"><a name="user-content-du-lieu_4" href="#du-lieu_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>3 3
+###
+#.#
+###
+2 2
+2 2
+</code></pre>
+
+<h4 id="ket-qua_4"><a name="user-content-ket-qua_4" href="#ket-qua_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>0
+</code></pre>
+
+<p>Trong ví dụ này, bé JOI đang dừng ở cửa ra nên số đường trượt phải thực hiện là $0$ đường trượt.</p>
+<h1 id="snowy-roads"><a name="user-content-snowy-roads" href="#snowy-roads" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>雪降る道路(Snowy Roads)</h1>
+<p>Ở Nga có rất nhiều địa điểm có tuyết rơi vào mùa đông. Nước Nga có $N$ thành phố, đánh số từ $0$ đến $N - 1$ và $N - 1$ con đường đánh số từ $0$ đến $N - 2$. Con đường $i$ $(0 \leq i \leq N - 2)$ nối hai thành phố khác nhau $A_i, B_i$ $(0 \leq A_i &lt; B_i \leq N - 1)$ theo cả hai chiều. Sử dụng hệ thống đường này, người ta có thể đi lại giữa hai thành phố bất kì.</p>
+<p>Tình trạng tuyết rơi của các con đường thay đổi theo ngày. Vào một ngày nhất định, tuyết hoặc rơi hoặc không rơi trên một con đường nào đó. Tình trạng tuyết rơi trên một con đường không thay đổi trong ngày.</p>
+<p>Anya và Boris làm việc tại Bộ Giao thông của Nga. Anya chuyên quản lí thông tin về đường sá còn Boris thì chuyên trả lời câu hỏi của người dân. Câu hỏi của người dân là để đi từ thủ đô (thành phố $0$) đến một thành phố nào đó thì cần phải đi qua tối thiểu bao nhiêu con đường có tuyết rơi. Thông thường, sau khi nhận được câu hỏi, Boris sẽ trao đổi với Anya để đưa ra câu trả lời.</p>
+<p>Lần này, Nga đăng cai Olympic Tin học Quốc tế kéo dài $Q$ ngày. Trong thời gian olympic diễn ra, hệ thống điện thoại có thể bị tắc nghẽn khiến cho việc liên lạc giữa Anya và Boris trở nên khó khăn hơn. Vì vậy, Anya và Boris quyết định liên lạc với nhau theo cách thức sau đây:</p>
+<ul>
+<li>Vào thời điểm đầu mỗi ngày, Anya nhận thông tin về tình trạng tuyết rơi rồi gửi đến một máy chủ trung gian.</li>
+<li>Sau khi nhận câu hỏi từ người dân, Boris thao tác với với máy chủ trung gian để trả lời câu hỏi.</li>
+</ul>
+<p>Tuy nhiên, các thao tác mà Anya và Boris thực hiện bị giới hạn bởi các ràng buộc sau đây:</p>
+<ul>
+<li>Dung lượng lưu trữ của máy chủ trung gian là $L = 1000$ bit. Anya chỉ có thể lưu trữ tối đa một lượng thông tin là $L$ bit vào máy chủ trung gian.</li>
+<li>Vào thời điểm đầu mỗi ngày, tất cả dữ liệu lưu trên máy chủ được khởi tạo về giá trị $0$.</li>
+<li>Mỗi lần thao tác với máy chủ, Boris có thể đọc được thông tin lưu trong $1$ bit.</li>
+<li>Với mỗi câu hỏi đến từ người dân, Boris chỉ có thời gian để thực hiện tối đa $20$ thao tác với máy chủ.</li>
+</ul>
+<p>Bạn - người quen của Bộ trưởng Bộ Giao thông - hãy giúp Anya và Boris xây dựng một chiến lược hợp lí để xử lí vấn đề này.</p>
+<h2 id="chi-tiet-cai-at"><a name="user-content-chi-tiet-cai-at" href="#chi-tiet-cai-at" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chi tiết cài đặt</h2>
+<p>Bạn cần cài đặt 2 file sử dụng cùng một ngôn ngữ lập trình.</p>
+<p>File thứ nhất là <code>Anya.c</code> hoặc <code>Anya.cpp</code>. File này cài đặt chiến lược của Anya. File này cần sử dụng thư viện <code>Anyalib.h</code> và cài đặt các hàm sau đây:</p>
+<ul>
+<li>
+<p><code>void InitAnya(int N, int A[], int B[])</code><br />
+    Hàm này chỉ được gọi đúng một lần đối với mỗi test.</p>
+<ul>
+<li>Tham số <code>N</code> cho biết số lượng thành phố.</li>
+<li>Tham số <code>A[]</code> và <code>B[]</code> là hai mảng số nguyên độ dài $N - 1$ cho biết thông tin về các con đường. Phần tử <code>A[i]</code> và <code>B[i]</code> $(0 \leq i \leq N - 2)$ cho biết con đường thứ $i$ nối hai thành phố <code>A[i]</code> và <code>B[i]</code> theo cả hai chiều. Điều kiện $0 \leq$ <code>A[i]</code> $&lt;$ <code>B[i]</code> $\leq N - 1$ được thoả mãn.</li>
+</ul>
+</li>
+<li>
+<p><code>void Anya(int C[])</code><br />
+    Sau khi hàm <code>InitAnya</code> được gọi, hàm này được gọi $Q$ lần. Hàm này yêu cầu Anya quyết định các bit sẽ được lưu vào máy chủ trung gian sau khi thông tin về tuyết rơi được cập nhật vào đầu mỗi ngày.</p>
+<ul>
+<li>Tham số <code>C[]</code> là một mảng số nguyên độ dài $N - 1$. Phần tử <code>C[i]</code> $(0 \leq i \leq N - 2)$ là $0$ hoặc $1$ cho biết tình trạng tuyết rơi trên con đường thứ $i$. <code>C[i] = 1</code> cho biết một con đường có tuyết rơi, <code>C[i] = 0</code> cho biết một con đường không có tuyết rơi.</li>
+</ul>
+<p>Từ hàm <code>Anya</code>, hàm sau đây có thể được gọi:<br />
+* <code>void Save(int place, int bit)</code><br />
+    Hàm này mô tả thao tác lưu trữ bit vào máy chủ của Anya.<br />
+    * Tham số <code>place</code> cho biết vị trí lưu trữ. <code>place</code> phải là một số nguyên từ $0$ đến $L - 1$. Với mỗi lần hàm <code>Anya</code> được gọi, hàm <code>Save</code> không thể được gọi nhiều hơn một lần với cùng một giá trị của tham số <code>place</code>.<br />
+    * Tham số <code>bit</code> cho biết giá trị được lưu trữ. <code>bit</code> phải là $0$ hoặc $1$.</p>
+<pre><code>Sau khi hàm `Save` được gọi, giá trị được lưu trữ tại bit thứ `place` trên máy chủ là `bit`.
+Nếu thao tác gọi hàm `Save` không hợp lệ, chương trình sẽ kết thúc ngay lập tức.
+
+Trước khi hàm `Anya` được gọi, tất cả các bit của máy chủ đều được đặt về giá trị là $0$. Nói cách khác, tất cả những bit không được đặt bởi hàm `Save` sẽ đều có giá trị là $0$ tại thời điểm hàm `Anya` kết thúc.
+</code></pre>
+</li>
+</ul>
+<p>File thứ hai là <code>Boris.c</code> hoặc <code>Boris.cpp</code>. File này cài đặt chiến lược của Boris. File này cần sử dụng thư viện <code>Borislib.h</code> và cài đặt các hàm sau đây:</p>
+<ul>
+<li>
+<p><code>void InitBoris(int N, int A[], int B[])</code><br />
+    Hàm này chỉ được gọi đúng một lần đối với mỗi test.</p>
+<ul>
+<li>Tham số <code>N</code> cho biết số lượng thành phố.</li>
+<li>Tham số <code>A[]</code> và <code>B[]</code> là hai mảng số nguyên độ dài $N - 1$ cho biết thông tin về các con đường. Phần tử <code>A[i]</code> và <code>B[i]</code> $(0 \leq i \leq N - 2)$ cho biết con đường thứ $i$ nối hai thành phố <code>A[i]</code> và <code>B[i]</code> theo cả hai chiều. Điều kiện $0 \leq$ <code>A[i]</code> $&lt;$ <code>B[i]</code> $\leq N - 1$ được thoả mãn.</li>
+</ul>
+</li>
+<li>
+<p><code>int Boris(int city)</code><br />
+    Hàm này được gọi sau khi hàm <code>InitBoris</code> đã được gọi. Hàm này mô phỏng hành động trả lời câu hỏi của người dân của Boris.</p>
+<ul>
+<li>Tham số <code>city</code> mô tả câu hỏi của người dân. <code>city</code> là một số nguyên không nhỏ hơn $1$ và không lớn hơn $N - 1$. Câu hỏi của người dân trong trường hợp này là: Để đi từ thành phố $0$ đến thành phố <code>city</code> thì cần phải đi qua tối thiểu bao nhiêu con đường có tuyết rơi.</li>
+<li>Hàm này cần trả về câu trả lời mà Boris cần trả lời cho người dân. Câu trả lời phải là một số nguyên không nhỏ hơn $0$ và không lớn hơn $N - 1$.</li>
+</ul>
+<p>Hàm <code>Boris</code> có thể gọi hàm sau đây:</p>
+<ul>
+<li>
+<p><code>int Ask(int place)</code><br />
+    Hàm này mô phỏng thao tác đọc dữ liệu từ máy chủ của Boris.</p>
+<ul>
+<li>Tham số <code>place</code> là chỉ số bit mà Boris muốn đọc. <code>place</code> phải là một số nguyên không nhỏ hơn $0$ và không lớn hơn $L - 1$.</li>
+</ul>
+<p>Giá trị trả về của hàm <code>Ask</code> là giá trị $0$ hoặc $1$ của bit thứ <code>place</code> được lưu tại máy chủ. Mỗi lần hàm <code>Boris</code> được gọi, hàm <code>Ask</code> có thể được gọi tối đa $20$ lần.</p>
+<p>Nếu thao tác gọi hàm <code>Ask</code> không hợp lệ, chương trình sẽ kết thúc ngay lập tức.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cham-iem"><a name="user-content-cham-iem" href="#cham-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chấm điểm</h3>
+<p>Quá trình chấm điểm được thực hiện như sau. Chương trình sẽ được kết thúc ngay tại thời điểm chương trình được nhận biết là không chính xác.</p>
+<ol>
+<li>Mỗi hàm <code>InitAnya</code> và <code>InitBoris</code> được gọi đúng một lần để cung cấp thông tin về hệ thống đường.</li>
+<li>Với mỗi $i = 1, 2, \ldots, Q$:<ol>
+<li>Hàm <code>Anya</code> được gọi đúng một lần duy nhất để Anya nhận thông tin về tuyết rơi vào đầu ngày và quyết định thông tin được lưu vào máy chủ.</li>
+<li>Hàm <code>Boris</code> được gọi $D_i$ lần trong đó $D_i$ là số câu hỏi mà Boris nhận được từ người dân vào ngày thứ $i$. Tại lần gọi thứ $j$ $(1 \leq j \leq D_i)$, tham số cho hàm <code>Boris</code> là $R_{ij}$ $(1 \leq R_{ij} \leq N - 1)$. Nếu giá trị trả về của hàm <code>Boris</code> không đúng là số con đường tối thiểu có tuyết rơi cần phải đi qua để đi được từ thành phố $0$ đến thành phố $R_{ij}$ thì chương trình được chấm là không chính xác.</li>
+</ol>
+</li>
+<li>Chương trình không được chấm là không chính xác một lần nào được chấm là chính xác.</li>
+</ol>
+<h3 id="chu-y"><a name="user-content-chu-y" href="#chu-y" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chú ý</h3>
+<ul>
+<li>
+<p>Thời gian thực thi và bộ nhớ được sử dụng được tính dựa trên bước 1 và bước 2 được nêu trong phần &ldquo;Chấm điểm&rdquo;. Trong bước 2, hàm <code>Anya</code> được gọi tổng cộng $Q$ lần, hàm <code>Boris</code> được gọi tổng cộng $D_1 + D_2 + \ldots + D_Q$ lần.</p>
+</li>
+<li>
+<p>Anya và Boris không thể biết các giá trị $D_1, D_2, \ldots, D_Q$.</p>
+</li>
+<li>
+<p>Hàm <code>Boris</code> không thể biết được hàm <code>Anya</code> đã cập nhật thông tin lưu tại máy chủ vào thời điểm nào.</p>
+</li>
+<li>
+<p>Bạn được tự do cài đặt các hàm phụ trợ, khai báo các biến toàn cục. Tuy nhiên, các file được nộp sẽ được biên dịch cùng với chương trình chấm thành một file chạy duy nhất do vậy cần tránh xung đột tên hàm, tên biến. Hơn nữa, chương trình của Anya và Boris được chạy thành hai tiến trình độc lập nên việc trao đổi thông tin giữa hai tiến trình thông qua biến toàn cục là bất khả thi.</p>
+</li>
+<li>
+<p>Chương trình bạn nộp không được phép tương tác với các luồng vào/ra chuẩn hoặc tương tác với các file khác.</p>
+</li>
+</ul>
+<h2 id="bien-dich-chay-chuong-trinh"><a name="user-content-bien-dich-chay-chuong-trinh" href="#bien-dich-chay-chuong-trinh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Biên dịch, chạy chương trình</h2>
+<p>Để kiểm tra chương trình của bạn, bạn có thể tải về từ máy chủ một tập nén có chứa chương trình chấm điểm mẫu. Trong tập tin nén này có bao gồm một tập tin mẫu của chương trình mà bạn phải nộp.</p>
+<p>Chương trình chấm điểm mẫu gồm một tập tin duy nhất: <code>grader.c</code> hoặc <code>grader.cpp</code>. Để kiểm tra chương trình của bạn, thực thi một trong các câu lệnh sau đây:</p>
+<ul>
+<li>Ngôn ngữ C: <code>gcc -std=c11 -O2 -o grader grader.c Anya.c Boris.c -lm</code></li>
+<li>Ngôn ngữ C++: <code>g++ -std=c++11 -O2 -o grader grader.cpp Anya.cpp Boris.cpp</code></li>
+</ul>
+<p>Sau khi biên dịch thành công, tập tin có thể được thực thi với tên <code>grader</code> sẽ được tạo.</p>
+<p>Bạn cần chú ý rằng chương trình chấm điểm chính thức và chương trình chấm điểm mẫu không giống nhau. Chương trình chấm điểm mẫu khởi động một tiến trình duy nhất, đọc dữ liệu từ luồng vào chuẩn và ghi dữ liệu ra luồng ra chuẩn.</p>
+<h3 id="du-lieu-vao-cho-chuong-trinh-cham-mau"><a name="user-content-du-lieu-vao-cho-chuong-trinh-cham-mau" href="#du-lieu-vao-cho-chuong-trinh-cham-mau" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu vào cho chương trình chấm mẫu</h3>
+<p>Chương trình chấm mẫu đọc dữ liệu từ luồng vào chuẩn với định dạng sau đây:</p>
+<ul>
+<li>Dòng 1: Số nguyên $N$ cho biết số lượng thành phố.</li>
+<li>Dòng thứ $i + 1$ $(0 \leq i \leq N - 1)$ trong số $N - 1$ dòng tiếp theo: Hai số nguyên $A_i$ và $B_i$ cho biết có một con đường hai chiều nối hai thành phố $A_i$ và $B_i$.</li>
+<li>Dòng tiếp theo: Số nguyên $Q$ cho biết olympic kéo dài $Q$ ngày.</li>
+<li>Dòng thứ $i$ $(1 \leq i \leq Q)$ trong số $Q$ dòng tiếp theo: Xâu kí tự $S_i$ độ dài $N - 1$ và $D_i + 1$ số nguyên. $S_i$ cho biết tình trạng tuyết rơi trong ngày thứ $i$. Kí tự thứ $j + 1$ từ trái sang của xâu $S_i$ là <code>1</code> hoặc <code>0</code> lần lượt cho biết vào ngày thứ $i$, có hoặc không có tuyết rơi trên con đường thứ $j$. Số nguyên đầu tiên trong số $D_i + 1$ số nguyên là $D_i$. Tiếp theo là $D_i$ số nguyên $R_{i1}, R_{i2}, \ldots, R_{iD_i}$. Câu hỏi thứ $j$ $(1 \leq j \leq D_i)$ của ngày thứ $i$ là số con đường có tuyết rơi tối thiểu cần phải đi qua để đi được từ thành phố $0$ đến thành phố $R_{ij}$.</li>
+</ul>
+<h3 id="ket-qua-cua-chuong-trinh-cham-mau"><a name="user-content-ket-qua-cua-chuong-trinh-cham-mau" href="#ket-qua-cua-chuong-trinh-cham-mau" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả của chương trình chấm mẫu</h3>
+<p>Chương trình chấm mẫu sẽ ghi ra trên một dòng duy nhất một dòng các nội dung sau đây nếu chương trình chấm mẫu kết thúc bình thường.</p>
+<ul>
+<li>Kết quả sai: Có dạng <code>Wrong Answer [2]</code> tuỳ theo loại lỗi.</li>
+<li>Kết quả đúng: Sau khi hàm <code>Anya</code> được gọi lần thứ $i$ $(1 \leq i \leq Q)$ và $D_i$ lần gọi hàm <code>Boris</code> đều kết thúc hợp lệ thì một dòng chứa $D_i$ số nguyên sẽ được ghi ra. Số nguyên thứ $j$ $(1 \leq j \leq D_i)$ là giá trị trả về của <code>Boris(</code>$R_{ij}$<code>)</code>.</li>
+</ul>
+<h2 id="gioi-han_1"><a name="user-content-gioi-han_1" href="#gioi-han_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Giới hạn</h2>
+<p>Trong tất cả các subtask:</p>
+<ul>
+<li>$2 \leq N \leq 500$.</li>
+<li>$1 \leq Q \leq 500$.</li>
+<li>$0 \leq A_i \leq B_i \leq N - 1$ $(0 \leq i \leq N - 2)$.</li>
+<li>$1 \leq D_j$ $(1 \leq j \leq Q)$.</li>
+<li>$D_1 + D_2 + \ldots + D_Q \leq 500$.</li>
+<li>Hệ thống đường đảm bảo khả năng đi lại giữa hai thành phố bất kì.</li>
+</ul>
+<h2 id="subtask_1"><a name="user-content-subtask_1" href="#subtask_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask</h2>
+<h3 id="subtask-1-15-iem"><a name="user-content-subtask-1-15-iem" href="#subtask-1-15-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 1 (15 điểm)</h3>
+<p>Trong subtask này $N \leq 20$.</p>
+<h3 id="subtask-2-5-iem"><a name="user-content-subtask-2-5-iem" href="#subtask-2-5-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 2 (5 điểm)</h3>
+<p>Trong subtask này $N \leq 100$.</p>
+<h3 id="subtask-3-35-iem"><a name="user-content-subtask-3-35-iem" href="#subtask-3-35-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 3 (35 điểm)</h3>
+<p>Trong subtask này:</p>
+<ul>
+<li>$A_i = i$ $(0 \leq i \leq N - 2)$.</li>
+<li>$B_i = i + 1$ $(0 \leq i \leq N - 2)$.</li>
+</ul>
+<h3 id="subtask-4-45-iem"><a name="user-content-subtask-4-45-iem" href="#subtask-4-45-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 4 (45 điểm)</h3>
+<p>Không có ràng buộc gì thêm.</p>
+<h2 id="vi-du_1"><a name="user-content-vi-du_1" href="#vi-du_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ</h2>
+<p>Nếu dữ liệu vào cho chương trình chấm mẫu là<br />
+<pre><code>5
+0 1
+1 2
+1 4
+2 3
+2
+0101 3 2 4 3
+1110 1 4
+</code></pre><br />
+thì việc gọi các hàm có thể diễn ra như sau</p>
+<table>
+<thead>
+<tr>
+<th>Gọi hàm</th>
+<th>Kết quả trả về</th>
+<th>Gọi hàm</th>
+<th>Kết quả trả về</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InitAnya(...)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>(không)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>InitBoris(...)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>(không)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Anya(...)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Save(0, 1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>(không)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Save(1, 0)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>(không)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Save(500, 1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>(không)</td>
+</tr>
+<tr>
+<td></td>
+<td>(không)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Boris(2)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Ask(0)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Ask(1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Ask(2)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Boris(4)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Boris(3)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Anya(...)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>(không)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Boris(4)</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Ask(0)</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Chú ý rằng không phải thao tác gọi hàm nào cũng có ý nghĩa.</p>
+<p>Hàm <code>InitAnya</code> và <code>InitBoris</code> được gọi với các tham số sau đây:</p>
+<table>
+<thead>
+<tr>
+<th>Tham số</th>
+<th><code>InitAnya(...)</code></th>
+<th><code>InitBoris(...)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>N</code></td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>{0, 1, 1, 2}</td>
+<td>{0, 1, 1, 2}</td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td>{1, 2, 4, 3}</td>
+<td>{1, 2, 4, 3}</td>
+</tr>
+</tbody>
+</table>
+<p>Hàm <code>Anya</code> được gọi với các tham số sau đây:</p>
+<table>
+<thead>
+<tr>
+<th>Tham số</th>
+<th>Lần 1</th>
+<th>Lần 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C</code></td>
+<td>{0, 1, 0, 1}</td>
+<td>{1, 1, 1, 0}</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2worst-reporter-2"><a name="user-content-2worst-reporter-2" href="#2worst-reporter-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>最悪の記者２(Worst Reporter 2)</h1>
+<p>Vào năm 21XX, lập trình thi đấu trở nên nổi tiếng tới mức được ti vi, báo chí đưa tin hằng ngày.</p>
+<p>Bạn là một nhà báo của toà báo JOI, chuyên đưa tin về lập trình thi đấu.</p>
+<p>Ngày hôm qua, một kì thi lập trình quốc tế với $N$ thí sinh đã được tổ chức và bạn được cung cấp những thông tin sau đây để viết một bài đăng về sự kiện này:</p>
+<ul>
+<li>Kì thi này giống với Olympic Tin học Quốc tế. Có $N$ quốc gia đánh số từ $1$ đến $N$ tham gia thi đấu, mỗi quốc gia có thể có một vài thí sinh. Cũng có thể có những quốc gia không có thí sinh nào.</li>
+<li>Thời gian thi đấu là 5 giờ.</li>
+<li>Trong thời gian thi đấu, điểm của một thí sinh không giảm.</li>
+<li>Sau 2 giờ thi đấu đầu tiên, không có hai thí sinh nào có cùng số điểm. Tại thời điểm đó thí sinh đứng ở vị trí thứ $i$ $(1 \leq i \leq N)$ đến từ quốc gia $A_i$ và đã giành được $B_i$ điểm.</li>
+<li>Khi kết thúc thời gian thi, không có hai thí sinh nào có cùng số điểm. Tại thời điểm đó thí sinh đứng ở vị trí thứ $i$ $(1 \leq i \leq N)$ đến từ quốc gia $C_i$ và đã giành được $D_i$ điểm.</li>
+</ul>
+<p>Tới khi phải viết bài đăng, bạn mới biết rằng thông tin về quốc gia được hiển thị trên bảng xếp hạng có thể không chính xác. Tuy nhiên, điểm của các thí sinh luôn được hiển thị chính xác.</p>
+<p>Do vậy, bạn muốn chỉnh sửa thông tin mà mình nhận được càng ít càng tốt để thông tin thu được sau khi chỉnh sửa không có mâu thuẫn (việc một thí sinh thay đổi quốc gia mà mình đại diện trong quá trình thi, điểm của một thí sinh giảm trong quá trình thi là không xảy ra). Nói cách khác, trong $2N$ số $A_1, A_2, \ldots, A_N, C_1, C_2, \ldots, C_N$, bạn muốn thay đổi ít số nhất có thể sao cho điều kiện sau đây được thoả mãn:</p>
+<ul>
+<li>Tồn tại một hoán vị $x_1, x_2, \ldots, x_N$ của $1, 2, \ldots, N$ sao cho với mọi $i = 1, 2, \ldots, N$, $A_i = C_{x_i}$ và $B_i \leq D_{x_i}$.</li>
+</ul>
+<p>Hãy xác định số lượng số tối thiểu mà bạn phải thay đổi.</p>
+<h2 id="du-lieu_5"><a name="user-content-du-lieu_5" href="#du-lieu_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h2>
+<ul>
+<li>Dòng 1: Số nguyên $N$.</li>
+<li>Dòng thứ $i$ $(1 \leq i \leq N)$ trong số $N$ dòng tiếp theo: Hai số nguyên $A_i$ và $B_i$.</li>
+<li>Dòng thứ $i$ $(1 \leq i \leq N)$ trong số $N$ dòng tiếp theo: Hai số nguyên $C_i$ và $D_i$.</li>
+</ul>
+<h2 id="ket-qua_5"><a name="user-content-ket-qua_5" href="#ket-qua_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h2>
+<p>Ghi ra một số nguyên duy nhất là kết quả bài toán.</p>
+<h2 id="gioi-han_2"><a name="user-content-gioi-han_2" href="#gioi-han_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Giới hạn</h2>
+<p>Trong tất cả các test:</p>
+<ul>
+<li>$2 \leq N \leq 200\,000$.</li>
+<li>$1 \leq A_i \leq N$ $(1 \leq i \leq N)$.</li>
+<li>$0 \leq B_i \leq 1\,000\,000\,000$ $(1 \leq i \leq N)$.</li>
+<li>$B_i &gt; B_{i + 1}$ $(1 \leq i \leq N - 1)$.</li>
+<li>$1 \leq C_i \leq N$ $(1 \leq i \leq N)$.</li>
+<li>$0 \leq D_i \leq 1\,000\,000\,0004 $(1 \leq i \leq N)$.</li>
+<li>$D_i &gt; D_{i + 1}$ $(1 \leq i \leq N - 1)$.</li>
+<li>Có thể thay đổi một vài phần tử của dãy $A_1, A_2, \ldots, A_N, C_1, C_2, \ldots, C_N$ để đạt được mục tiêu đã nêu.</li>
+</ul>
+<h2 id="subtask_2"><a name="user-content-subtask_2" href="#subtask_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask</h2>
+<h3 id="subtask-1-15-iem_1"><a name="user-content-subtask-1-15-iem_1" href="#subtask-1-15-iem_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 1 (15 điểm)</h3>
+<p>Trong subtask này $N \leq 16$.</p>
+<h3 id="subtask-2-15-iem"><a name="user-content-subtask-2-15-iem" href="#subtask-2-15-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 2 (15 điểm)</h3>
+<p>Trong subtask này $N \leq 50$.</p>
+<h3 id="subtask-3-30-iem"><a name="user-content-subtask-3-30-iem" href="#subtask-3-30-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 3 (30 điểm)</h3>
+<p>Trong subtask này $N \leq 5000$.</p>
+<h3 id="subtask-4-40-iem"><a name="user-content-subtask-4-40-iem" href="#subtask-4-40-iem" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Subtask 4 (40 điểm)</h3>
+<p>Không có ràng buộc gì thêm.</p>
+<h2 id="vi-du_2"><a name="user-content-vi-du_2" href="#vi-du_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ</h2>
+<h3 id="vi-du-1_1"><a name="user-content-vi-du-1_1" href="#vi-du-1_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 1</h3>
+<h4 id="du-lieu_6"><a name="user-content-du-lieu_6" href="#du-lieu_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>3
+3 500
+2 200
+1 100
+1 1000
+3 700
+3 400
+</code></pre>
+
+<h4 id="ket-qua_6"><a name="user-content-ket-qua_6" href="#ket-qua_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>1
+</code></pre>
+
+<h3 id="vi-du-2_1"><a name="user-content-vi-du-2_1" href="#vi-du-2_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 2</h3>
+<h4 id="du-lieu_7"><a name="user-content-du-lieu_7" href="#du-lieu_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>3
+3 3
+3 2
+1 1
+3 4
+3 2
+1 1
+</code></pre>
+
+<h4 id="ket-qua_7"><a name="user-content-ket-qua_7" href="#ket-qua_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>0
+</code></pre>
+
+<h3 id="vi-du-3_1"><a name="user-content-vi-du-3_1" href="#vi-du-3_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Ví dụ 3</h3>
+<h4 id="du-lieu_8"><a name="user-content-du-lieu_8" href="#du-lieu_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dữ liệu</h4>
+<pre><code>6
+1 70
+4 50
+1 30
+2 20
+1 10
+3 0
+6 100
+2 90
+1 80
+2 60
+4 40
+1 10
+</code></pre>
+
+<h4 id="ket-qua_8"><a name="user-content-ket-qua_8" href="#ket-qua_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Kết quả</h4>
+<pre><code>3
+</code></pre></article></body></html>

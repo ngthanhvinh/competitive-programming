@@ -1,0 +1,1 @@
+{"id":"0840ff2bb11752cb0ebcbf8b08ae85c7","index":21,"scriptPattern":"gen [350..450] [350..450] [60..110] [50..110]","inputFile":"bomb.in","outputFile":"bomb.out","memoryLimit":128,"timeLimit":1000,"totalTimeLimit":90000,"solutionNames":["bombs_mi_wa4.cpp"],"description":""}

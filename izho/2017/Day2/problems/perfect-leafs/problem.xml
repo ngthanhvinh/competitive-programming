@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="19" short-name="perfect-leafs" url="https://polygon.codeforces.com/p/Temirulan/perfect-leafs">
+    <names>
+        <name language="english" value="Hard route"/>
+        <name language="russian" value="Крутой маршрут"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="russian" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="english" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement charset="UTF-8" language="russian" path="statements/.html/russian/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3600" input-file="road.in" output-file="road.out">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>78</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="A" method="manual" sample="true"/>
+                <test group="A" method="manual" sample="true"/>
+                <test group="A" method="manual" sample="true"/>
+                <test group="A" method="manual"/>
+                <test group="A" method="manual"/>
+                <test group="A" method="manual"/>
+                <test cmd="gen1 100 L6sAyAem9X3eX1H6oYQt" group="A" method="generated"/>
+                <test cmd="gen1 100 qG378vm6u5050e8UuiXf" group="A" method="generated"/>
+                <test cmd="gen1 100 98LZ19G7Nr0H713Ha9EZ" group="A" method="generated"/>
+                <test cmd="gen1 100 S7ZSDtkedqwXUrQtiD2s" group="A" method="generated"/>
+                <test cmd="gen2 100 YV7QzVh19xSt538qLk37" group="A" method="generated"/>
+                <test cmd="gen2 100 LWrBwY7wPvYjjU2dbvd9" group="A" method="generated"/>
+                <test cmd="gen2 100 1d1nJIpchB7ciqN0dkC6" group="A" method="generated"/>
+                <test cmd="gen2 100 4fw4wuo1pjsbXCycTOLF" group="A" method="generated"/>
+                <test cmd="gen3 100 Yru38WD1rt0fDJhEaCOC" group="A" method="generated"/>
+                <test cmd="gen3 100 I3mzhM4rx9dwbCDgfkse" group="A" method="generated"/>
+                <test cmd="gen3 100 bjkKnyXNmHT7GdHJi7Md" group="A" method="generated"/>
+                <test cmd="gen3 100 X9fLJQqLkcdN9i1kPies" group="A" method="generated"/>
+                <test cmd="gen_star 1 99 I3JTjevKQhVzG8aosaSW" group="A" method="generated"/>
+                <test cmd="gen_star 2 49 5EumFZ20lEkrDaiegS2Z" group="A" method="generated"/>
+                <test cmd="gen_star 4 24 8yMpX9eAy7VdcA4CXfCE" group="A" method="generated"/>
+                <test cmd="gen_star 5 19 xE16STYl5NpAF7aKHRP9" group="A" method="generated"/>
+                <test cmd="gen_star 13 7 nyZPRRsmqoUrVh3EKomg" group="A" method="generated"/>
+                <test cmd="gen_star 99 1 FCmUvji63IxCruAHByo6" group="A" method="generated"/>
+                <test cmd="gen1 5000 9Ix6b1cOjJt6BXyHptsO" group="B" method="generated"/>
+                <test cmd="gen1 5000 gkiw2jXA1ldMzCaHXLtG" group="B" method="generated"/>
+                <test cmd="gen1 5000 Ymoy42cRRksNYlknz0tw" group="B" method="generated"/>
+                <test cmd="gen1 5000 BKBbhrI0n7olDyucRHzJ" group="B" method="generated"/>
+                <test cmd="gen2 5000 nvGAaqb2kzhIFcSG8AKc" group="B" method="generated"/>
+                <test cmd="gen2 5000 60I5QnYYRXlYueJlEXom" group="B" method="generated"/>
+                <test cmd="gen2 5000 G9w7OXYeUPu5OCX4cZG3" group="B" method="generated"/>
+                <test cmd="gen2 5000 92G5vhBBTZzD2xVYcQj9" group="B" method="generated"/>
+                <test cmd="gen3 5000 ec3PdYEAqcBx0ZxVIpb8" group="B" method="generated"/>
+                <test cmd="gen3 5000 V0DQ5nyjGG4mhqPUAXs6" group="B" method="generated"/>
+                <test cmd="gen3 5000 vcsLQ56WAXnmwYHst974" group="B" method="generated"/>
+                <test cmd="gen3 5000 2LUzEOIbkzkRQteWskos" group="B" method="generated"/>
+                <test cmd="gen_star 1 4999 nZtGXB1HEoAusQB1OYBr" group="B" method="generated"/>
+                <test cmd="gen_star 2 2499 a8akpvpWLuAykmKRfjv5" group="B" method="generated"/>
+                <test cmd="gen_star 5 999 miRQGj4KKSTO94tQe8S7" group="B" method="generated"/>
+                <test cmd="gen_star 10 499 wcqsLR97MukI9bDxwbi5" group="B" method="generated"/>
+                <test cmd="gen_star 20 249 iWw0kg5CE6kbHPQddfkB" group="B" method="generated"/>
+                <test cmd="gen_star 50 99 6UbZqMNZSYvR469wCYkp" group="B" method="generated"/>
+                <test cmd="gen_star 100 49 WW1amre6lAIkpqXHwcDi" group="B" method="generated"/>
+                <test cmd="gen_star 200 24 KN12XMzk3b2dCxF69II3" group="B" method="generated"/>
+                <test cmd="gen_star 500 9 KX5cOIWfQMDocGL8tABm" group="B" method="generated"/>
+                <test cmd="gen_star 1000 4 JnXa6PoPvvKhErRDUzGl" group="B" method="generated"/>
+                <test cmd="gen_star 2400 2 EqZoqzoTOqWUBHKag3Kv" group="B" method="generated"/>
+                <test cmd="gen_star 4999 1 cvhgTnbfnPvIY9q1w7nu" group="B" method="generated"/>
+                <test cmd="gen1 500000 fECBZyq4zfpjttAtaxgi" group="C" method="generated"/>
+                <test cmd="gen1 500000 QT6cLcDQHwKD6aCGXl8g" group="C" method="generated"/>
+                <test cmd="gen1 500000 b4sYyimbFPmVI2Jlz9EQ" group="C" method="generated"/>
+                <test cmd="gen1 500000 viC1nXKporR4URjdsjfa" group="C" method="generated"/>
+                <test cmd="gen2 500000 87WYtCcu5mvIYu1hK3OG" group="C" method="generated"/>
+                <test cmd="gen2 500000 Olz6MfJqJ1WqNS7QztsW" group="C" method="generated"/>
+                <test cmd="gen2 500000 cCZ0LC8q0WMnGUnoiMbK" group="C" method="generated"/>
+                <test cmd="gen2 500000 bQFjzoeHcewmvJOTXMLX" group="C" method="generated"/>
+                <test cmd="gen3 500000 qLWFtdGszaI5jghByJfZ" group="C" method="generated"/>
+                <test cmd="gen3 500000 sMwIpETgEs6xEgHmYJu0" group="C" method="generated"/>
+                <test cmd="gen3 500000 KdRJzVNh6vf608YcnGAg" group="C" method="generated"/>
+                <test cmd="gen3 500000 6W5ZEVB0Lb752EUSIOly" group="C" method="generated"/>
+                <test cmd="gen_star 1 499999 XAPs04B1h0Fk9ogK2nzJ" group="C" method="generated"/>
+                <test cmd="gen_star 2 249999 bdAMjuamLe5wznYdUBNv" group="C" method="generated"/>
+                <test cmd="gen_star 5 99999 ihLUJloSBBUWzJlgf8a9" group="C" method="generated"/>
+                <test cmd="gen_star 10 49999 tAQ6OZPnhzDFFUmoL0f3" group="C" method="generated"/>
+                <test cmd="gen_star 20 24999 pjMgyvp7uFM1ccjqR6nT" group="C" method="generated"/>
+                <test cmd="gen_star 50 9999 oEeIrtUIBN2VH6XKqfBg" group="C" method="generated"/>
+                <test cmd="gen_star 100 4999 Oef2IcduUJdug6tPh7w3" group="C" method="generated"/>
+                <test cmd="gen_star 200 2499 UtFHDUARq0n5jSsAnW65" group="C" method="generated"/>
+                <test cmd="gen_star 500 999 EvsmHaCM21wYkVCKHlCV" group="C" method="generated"/>
+                <test cmd="gen_star 1000 499 S1EbrOvGrHls2O7jmXLo" group="C" method="generated"/>
+                <test cmd="gen_star 1999 249 LvaC1kgcMi5nrAn6fhRJ" group="C" method="generated"/>
+                <test cmd="gen_star 2499 200 8UokH9ulv2tTTWKqQwSn" group="C" method="generated"/>
+                <test cmd="gen_star 9999 50 UW9qJinNQFWfik4g7sqM" group="C" method="generated"/>
+                <test cmd="gen_star 19999 25 zI1WBZnoz0CnePykpGOD" group="C" method="generated"/>
+                <test cmd="gen_star 49999 10 CwD9URtwrJXJhSotVou4" group="C" method="generated"/>
+                <test cmd="gen_star 99999 5 eDEGPQ1YEo7SYjVQJhf1" group="C" method="generated"/>
+                <test cmd="gen_star 249999 2 wSaZZsdxAOyQpWEPy0jJ" group="C" method="generated"/>
+                <test cmd="gen_star 499999 1 FZmoP8wVLX8Kl7cVsiau" group="C" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.g++"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen1.cpp" type="cpp.g++"/>
+                <binary path="files/gen1.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen2.cpp" type="cpp.g++"/>
+                <binary path="files/gen2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen3.cpp" type="cpp.g++"/>
+                <binary path="files/gen3.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_star.cpp" type="cpp.g++"/>
+                <binary path="files/gen_star.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.g++"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>6</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/road_mi_ok.cpp" type="cpp.g++11"/>
+                <binary path="solutions/road_mi_ok.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sol_best2_mt.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_best2_mt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sol_best_mt.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_best_mt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sol_mt.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_mt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol_n2_an.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_n2_an.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol_n2_mt.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_n2_mt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol_n3_mt.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_n3_mt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol_nlogn_an.cpp" type="cpp.g++"/>
+                <binary path="solutions/sol_nlogn_an.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="counting"/>
+        <tag value="dynamic programming"/>
+        <tag value="tree"/>
+    </tags>
+</problem>

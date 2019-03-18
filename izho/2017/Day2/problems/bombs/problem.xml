@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="43" short-name="bombs" url="https://polygon.codeforces.com/p/gamzaza/bombs">
+    <names>
+        <name language="english" value="Bomb"/>
+        <name language="russian" value="Бомба"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="russian" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="english" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement charset="UTF-8" language="russian" path="statements/.html/russian/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3200" input-file="bomb.in" output-file="bomb.out">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>134217728</memory-limit>
+            <test-count>101</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="gen 20 20 4 5 uiaasd" method="generated"/>
+                <test cmd="gen 20 20 5 6 55af0f81b8b6b9321b3d5b72040074ec" method="generated"/>
+                <test cmd="gen_halfs_little 4 3 14 13 hgyexbi" method="generated"/>
+                <test cmd="gen 20 19 6 6 eb263ce24458d2e2e13eb8c57813b089" method="generated"/>
+                <test cmd="gen_halfs_little 4 2 15 15 aypyexn" method="generated"/>
+                <test cmd="gen_halfs_little 5 3 15 11 ravccbagt" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen 18 18 5 5 c39bc6fe27368c1750426e6751e4f2a5" method="generated"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="gen_halfs_little 6 4 70 62 wsusvzgpa" method="generated"/>
+                <test cmd="gen 94 78 19 16 5352285d723c27a4cd7cc43c4dbac7c5" method="generated"/>
+                <test cmd="gen 92 84 19 17 6831c70ad685bcf33e145cb3b3ffbf88" method="generated"/>
+                <test cmd="gen_halfs_little 4 4 53 89 jdqdqk" method="generated"/>
+                <test cmd="gen_halfs_little 6 6 76 93 kydcycbai" method="generated"/>
+                <test cmd="gen 100 100 22 31 fb5aee977340af714e7fdaf17fbbb537" method="generated"/>
+                <test cmd="gen 81 74 20 17 d4f6e54ddee7d39ba33788d92235d3f9" method="generated"/>
+                <test cmd="gen 100 100 33 33 76e1636c0bf928312b39ccb85aedd582" method="generated"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="gen_halfs_little 7 8 290 383 afcnymems" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen 432 434 103 136 efc012d7989ad1db70a1ac6ef65a00f1" method="generated"/>
+                <test cmd="gen 334 450 75 113 e67b42120c5438c7f675e0c486504ada" method="generated"/>
+                <test cmd="gen 407 383 110 59 13a6e0edba128bd452421f9d1f8fba46" method="generated"/>
+                <test cmd="gen 450 450 140 145 09b4884b970b7546ea8cac481027674a" method="generated"/>
+                <test cmd="gen_halfs_little 8 12 356 231 wgcftf" method="generated"/>
+                <test cmd="gen 450 450 20 148 1faa9c9d14ec2246b244aaeec0bd687b" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_func 20 20248" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_func 20 5305" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_func 20 b" method="generated"/>
+                <test cmd="gen_func 100 20238" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_func 450 b" method="generated"/>
+                <test cmd="gen_func 2500 a" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_func 2500 b" method="generated"/>
+                <test cmd="gen_halfs 42 109 amravccba" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_halfs 44 195 beccwsu" method="generated"/>
+                <test cmd="gen_halfs 43 183 gpasl" method="generated"/>
+                <test cmd="gen_halfs 47 145 jdqdqk" method="generated"/>
+                <test cmd="gen_halfs 45 128 fmkydcyc" method="generated"/>
+                <test cmd="gen_random 49 131 memslmb" method="generated"/>
+                <test cmd="gen_random 46 106 wxocogha" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen_random 41 154 gcftft" method="generated"/>
+                <test cmd="gen_random 49 176 lalwgj" method="generated"/>
+                <test cmd="gen_random 47 117 zuamnl" method="generated"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="gen 2000 2000 393 356 1c31f36ebfac6a1dc5e30b2b7c1f6b02" method="generated"/>
+                <test cmd="gen 2500 2500 589 567 8de617e98e8776e1f6d6f5fa22bffebb" method="generated"/>
+                <test cmd="gen 2500 2500 650 808 dd4bfcd61b34df4a8662ab7f70ee6005" method="generated"/>
+                <test cmd="gen 2500 2500 716 819 02e506d1cf8275c223d3af966976b1bc" method="generated"/>
+                <test cmd="gen 2500 2500 678 811 f0ad00bae20475ded8c08296ce1f3dda" method="generated"/>
+                <test cmd="gen 2500 2500 723 807 f3af887e0e3f687901fa29bf76294fbd" method="generated"/>
+                <test cmd="gen 2500 2500 761 811 7600bf257b98259a61c5d526a59784f1" method="generated"/>
+                <test cmd="gen 2500 2500 800 811 75f862155fea8cb9968c22f77e85e1f2" method="generated"/>
+                <test cmd="gen 2500 2500 789 804 a2a5958f1dcffba67187c189ee933490" method="generated"/>
+                <test cmd="gen 2500 2500 214 26 343e04c8ee97103063158f7b898bf8b8" method="generated"/>
+                <test cmd="gen 2500 2500 270 20 46e070654ef30e113bafe4020cd3cd91" method="generated"/>
+                <test cmd="gen 2500 2500 226 285 2c73a64736422dd27cc91cf1f966443e" method="generated"/>
+                <test cmd="gen 2500 2500 830 828 2c37cf57e0d2d2bb3907c6bec6b5d9b7" method="generated"/>
+                <test cmd="gen 2500 2500 830 820 104c34bd38411b5e5476bbe04edb5142" method="generated"/>
+                <test cmd="gen 2500 2500 20 250 825ba6d91587b89c67d703041b675172" method="generated"/>
+                <test cmd="gen_max 2500 2500 523 521 b631e4c3910865574cc2a283b0f0f6a6" method="generated"/>
+                <test cmd="gen_max 2500 2500 34 80 d5bdc82b902a4328bb53d73caa720a95" method="generated"/>
+                <test cmd="gen_max 2500 2500 385 589 8d004a0702eea3535ba864fbc41ed77c" method="generated"/>
+                <test cmd="gen 2500 2500 830 820 fd82c3d503d2914276c9bc6034d57dcc" method="generated"/>
+                <test cmd="gen_max 2500 2500 268 346 6c17a8999e3eeed5a82790beb5b4c5b5" method="generated"/>
+                <test cmd="gen_max 2000 2000 447 463 c640bf498a97cc58b011c8e60ade50cb" method="generated"/>
+                <test cmd="gen_max 2500 2500 418 458 38d259ef05464ef908eb986680e75ac1" method="generated"/>
+                <test cmd="gen_max 2500 2500 390 317 b3f6e319d1e145c856f913ed48910c9d" method="generated"/>
+                <test cmd="gen_max 2500 2500 65 62 12ddbdbc56fa7a9978bb589450918fef" method="generated"/>
+                <test cmd="gen_max 2500 2500 279 333 fd3de33a53e56f8c104f05d03c735de2" method="generated"/>
+                <test cmd="gen 2500 2500 830 824 88ea9d8c1fed9266c4fa56d680379d05" method="generated"/>
+                <test cmd="gen 2500 2500 830 823 05fccd748426c0b4786a993eba55e807" method="generated"/>
+                <test cmd="gen_max 2500 2500 38 62 eb948c39562eacab29e0205b6cd32e11" method="generated"/>
+                <test cmd="gen 2500 2500 830 825 dc2d8c81a59722846d79546bd4d7ed29" method="generated"/>
+                <test cmd="gen_max 2500 2500 289 333 27c1fd0820bf27aa730957ce7c26befe" method="generated"/>
+                <test cmd="gen_max 2500 2500 75 68 f3d0b77802af95f797e0910c0db9096b" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.g++"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_func.cpp" type="cpp.g++"/>
+                <binary path="files/gen_func.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_halfs.cpp" type="cpp.g++"/>
+                <binary path="files/gen_halfs.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_halfs_little.cpp" type="cpp.g++11"/>
+                <binary path="files/gen_halfs_little.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_max.cpp" type="cpp.g++"/>
+                <binary path="files/gen_max.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_random.cpp" type="cpp.g++11"/>
+                <binary path="files/gen_random.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validate.cpp" type="cpp.g++"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validate.cpp" type="cpp.g++"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/bomb.cpp" type="cpp.g++11"/>
+                <binary path="solutions/bomb.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_aa_log.cpp" type="cpp.g++11"/>
+                <binary path="solutions/bombs_aa_log.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_aa_log2.cpp" type="cpp.g++11"/>
+                <binary path="solutions/bombs_aa_log2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_aa_nz.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_aa_nz.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_aa_wa.cpp" type="cpp.g++11"/>
+                <binary path="solutions/bombs_aa_wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_elibay_wa.cpp" type="cpp.g++11"/>
+                <binary path="solutions/bombs_elibay_wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/bombs_mi_ok.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_ok.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_tl_n3.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_tl_n3.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_tl_n4.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_tl_n4.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_wa.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_wa2.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_wa2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_wa3.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_wa3.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/bombs_mi_wa4.cpp" type="cpp.g++"/>
+                <binary path="solutions/bombs_mi_wa4.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/wa_tima.cpp" type="cpp.g++"/>
+                <binary path="solutions/wa_tima.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>31</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list>
+            <stress index="31" path="stresses/031"/>
+            <stress index="30" path="stresses/030"/>
+            <stress index="29" path="stresses/029"/>
+            <stress index="28" path="stresses/028"/>
+            <stress index="27" path="stresses/027"/>
+            <stress index="26" path="stresses/026"/>
+            <stress index="25" path="stresses/025"/>
+            <stress index="24" path="stresses/024"/>
+            <stress index="23" path="stresses/023"/>
+            <stress index="22" path="stresses/022"/>
+            <stress index="21" path="stresses/021"/>
+            <stress index="20" path="stresses/020"/>
+            <stress index="19" path="stresses/019"/>
+            <stress index="18" path="stresses/018"/>
+            <stress index="17" path="stresses/017"/>
+            <stress index="16" path="stresses/016"/>
+            <stress index="15" path="stresses/015"/>
+            <stress index="14" path="stresses/014"/>
+            <stress index="13" path="stresses/013"/>
+            <stress index="12" path="stresses/012"/>
+            <stress index="11" path="stresses/011"/>
+            <stress index="10" path="stresses/010"/>
+            <stress index="9" path="stresses/009"/>
+            <stress index="8" path="stresses/008"/>
+            <stress index="7" path="stresses/007"/>
+            <stress index="6" path="stresses/006"/>
+            <stress index="5" path="stresses/005"/>
+            <stress index="4" path="stresses/004"/>
+            <stress index="3" path="stresses/003"/>
+            <stress index="2" path="stresses/002"/>
+            <stress index="1" path="stresses/001"/>
+        </list>
+    </stresses>
+</problem>
