@@ -1,0 +1,22 @@
+4 4 1234567
+12344 321124 22347 14412
+
+1 and 2
+3 xor 4
+1 or 1
+2 and 4
+
+1 or 3
+2 and 4
+1 or 2
+2 and 4
+
+1 or 4
+2 xor 3
+3 and 4
+4 xor 1
+
+2 xor 3
+4 xor 1
+1 xor 2
+3 xor 4
