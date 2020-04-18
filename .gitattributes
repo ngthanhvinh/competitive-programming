@@ -1,0 +1,6 @@
+# This is raw data
+**/*.in    -linguist-detectable
+**/*.out   -linguist-detectable
+**/*.in.*  -linguist-detectable  
+**/*.out.* -linguist-detectable  
+
